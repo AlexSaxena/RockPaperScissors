@@ -1,5 +1,11 @@
 # RockPaperScissors
 
+### How to run tests
+For feature testing run the command.
+```
+yarn run cucumber
+```
+
 ### User Stories
 
 ```
@@ -37,3 +43,7 @@ As a user
 If I pick scissors
 I want to see if I won, lost or tied against the computer
 ```
+
+## License
+
+MIT-License
