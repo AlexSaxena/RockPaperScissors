@@ -7,9 +7,9 @@ Feature: Play the game
 Scenario: User visits the game site
     Given I visit the landing page
     Then I should see "Let's play some Rock, Paper, Scissors"
-    And I should see "Rock" button
+    And I should see "Rock"
 
 Scenario: User plays the game
     Given I visit the landing page
-    And I click on "paper" button
+    And I click on "Paper"
     Then I should see "Wow it looks like you"
