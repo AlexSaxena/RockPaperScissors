@@ -1,7 +1,12 @@
-# RockPaperScissors
+# Rock Paper Scissors Application
+Created by: Alex Saxena
 
-### How to run tests
-For feature testing run the command.
+## About the code
+This is a simple Rock Paper Scissors application where the player competes against the computer.
+
+## How to run tests
+This code base has been feature tested using Cucumber.  
+For feature testing run the following command.
 ```
 yarn run cucumber
 ```

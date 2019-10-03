@@ -30,6 +30,20 @@ class RSPWorld {
     await this.page.click(btnSelector)
   }
 
+  btnSelectorFromName(btnName) {
+    switch (btnName) {
+      case 'rock':
+        return '#rock'
+        break
+      case 'paper':
+        return '#paper'
+        break
+      case 'scissors':
+        return '#scissors'
+        break     
+    }
+  }
+
 }
 
 setWorldConstructor(RSPWorld)
