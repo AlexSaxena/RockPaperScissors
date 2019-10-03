@@ -8,14 +8,31 @@ const rock_button = document.getElementById("rock");
 const paper_button = document.getElementById("paper");
 const scissors_button = document.getElementById("scissors");
 
-function aiPick() {
+function getAiPick() {
   const picks = ['rock', 'paper', 'scissors'];
   const randomNumber = Math.floor(Math.random() * 3);
   return picks[randomNumber];
 }
-
+//Test Switch skip If else
 function game(playerPick) {
-  console.log("testing user pick" + playerPick)
+  const aiPick = getAiPick();
+  switch (playerPick + aiPick) {
+    case "rockscissors":
+      case "paperrock":
+        case "scissorspaper":
+          console.log("player wins");
+          break;
+    case "rockpaper":
+        case "paperscissors":
+          case "scissorsrock":
+            console.log("player loses");
+            break;
+    case "rockrock":
+        case "paperpaper":
+          case "scissorsscissors":
+            console.log("it is a tie");
+            break;
+  }
 }
 
 const main = () => {
