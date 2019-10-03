@@ -14,6 +14,23 @@ function getAiPick() {
   const randomNumber = Math.floor(Math.random() * 3);
   return picks[randomNumber];
 }
+
+function victory() {
+  playerPoints++
+  playerPoints_span.innerHTML = playerPoints;
+  result_div.innerHTML = `You win!`
+ }
+
+ function loss() {
+  aiPoints++
+  aiPoints_span.innerHTML = aiPoints;
+  result_div.innerHTML = `You lose!`
+ }
+ 
+ function tie() {
+  result_div.innerHTML = `It is a tie!`
+ }
+
 //Test Switch skip If else
 function game(playerPick) {
   const aiPick = getAiPick();
@@ -21,17 +38,17 @@ function game(playerPick) {
     case "rockscissors":
       case "paperrock":
         case "scissorspaper":
-          console.log("player wins");
+          victory(playerPick + aiPick);
           break;
     case "rockpaper":
         case "paperscissors":
           case "scissorsrock":
-            console.log("player loses");
+            loss(playerPick + aiPick);
             break;
     case "rockrock":
         case "paperpaper":
           case "scissorsscissors":
-            console.log("it is a tie");
+            tie(playerPick + aiPick);
             break;
   }
 }
@@ -50,5 +67,5 @@ const main = () => {
   scissors_button.addEventListener('click', function() {
     game("scissors");
   })
-}
-console.log(main())
+};
+console.log(main());
