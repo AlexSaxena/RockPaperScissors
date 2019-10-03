@@ -7,6 +7,7 @@ const result_div = document.querySelector(".result");
 const rock_button = document.getElementById("rock");
 const paper_button = document.getElementById("paper");
 const scissors_button = document.getElementById("scissors");
+//Should these be here or in another file?
 
 function getAiPick() {
   const picks = ['rock', 'paper', 'scissors'];
@@ -34,7 +35,9 @@ function game(playerPick) {
             break;
   }
 }
-
+//seperate logic -Thomas. create wins, tie loss function in case. That's were we also add the 
+// Points for the player_points counter
+//When button is pressed
 const main = () => {
   rock_button.addEventListener('click', function() {
     game("rock");
