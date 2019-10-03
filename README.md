@@ -9,11 +9,6 @@ yarn run cucumber
 ### User Stories
 
 ```
-As a programmer
-In order to produce good quality code
-I want to work in a test driven way and unit test my code
-```
-```
 As a user
 In order to view the game
 I must first visit the site
