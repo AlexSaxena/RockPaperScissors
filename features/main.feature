@@ -1,9 +1,11 @@
-Feature: Play the game
-  As a player
-  In order to play the game
-  I would like to be able to pick one of three choices and play
+Feature: Visit the game site
+    As a User
+    In order to play a game of Rock, Paper or Scissors against the computer.
+    I would like to be able to visit the site and see the title
 
-  Scenario: Press one of three buttons
-    Given I visit the site
-    Then I should see "RSP"
-    And I should see "Pick your weapon"
+		Scenario: User visits the game site
+			Given I visit the landing page
+			Then I should see "Let's play some Rock, Paper, Scissors"
+			And I should see "rock"
+			And I should see "paper"
+			And I should see "scissors"

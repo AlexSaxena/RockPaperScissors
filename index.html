@@ -5,11 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-  <script src="./dist/bundle.js"></script>
+  <header>
+    <h1>Let's play some Rock, Paper, Scissors</h1>
+  </header>
+
+  <p id="pick-weapon">Pick your weapon!</p>
+
+    <div class="weapons">
+      <button class="ui inverted brown button" id="rock">rock</button>
+      <button class="ui inverted grey button" id="paper">paper</button>
+      <button class="ui inverted red button" id="scissors">scissors</button>
+    </div>
+
+  <div class="result">
+    <p>Can you win against me?</p>
+  </div>
+
+  <div class="points">
+    <span id="playerPoints">0</span> VS <span id="aiPoints">0</span>
+  </div>
+
+ 
+  <script src="./src/app.js"></script>
 </body>
 
 </html>

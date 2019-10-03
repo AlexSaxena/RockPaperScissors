@@ -1,0 +1,35 @@
+header {
+  background: rgb(240, 222, 222);
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background: rgb(58, 64, 75);
+}
+
+#pick-weapon{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.points {
+  margin: 25px auto;
+  width: 200px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+.result {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.weapons {
+  text-align: center;
+  margin: 40px;
+}
