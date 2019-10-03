@@ -8,6 +8,15 @@ const rock_button = document.getElementById("rock");
 const paper_button = document.getElementById("paper");
 const scissors_button = document.getElementById("scissors");
 
+function aiPick() {
+  const picks = ['rock', 'paper', 'scissors'];
+  const randomNumber = Math.floor(Math.random() * 3);
+  return picks[randomNumber];
+}
+
+function game(playerPick) {
+  console.log("testing user pick" + playerPick)
+}
 
 const main = () => {
   rock_button.addEventListener('click', function() {
